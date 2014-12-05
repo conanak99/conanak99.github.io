@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Firebase App</title>
+</head>
+<!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+<!-- Firebase -->
+<script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/0.9.0/angularfire.min.js"></script>
+    <body ng-app="app">
+        <h1>Firebase chatbox</h1>
+        
+        <div ng-controller="chatCtrl">
+            <div id="chatBox" style="padding: 10px; border: black 1px solid">
+                <h1>Chat box</h1>
+                <div ng-repeat="chatMessage in chatMessages">
+                    <span style="font-weight: bold">{{chatMessage.name}}</span>
+                     : <span>{{chatMessage.message}}</span> | <a ng-click="delete(chatMessage)" href="#">X</a>
+                </div> 
+                
+                <button type="submit" ng-click="clear()">Clear</button>
+            </div>
+               
+            <form>
+                Name: {{name}} <br/>
+                Chat: <input type="text" ng-model="chatMes"/> <button type="submit" ng-click="sendChat()" >Send</button>
+            </form>
+        </div>
+    </body>
+
+
+    <script>
+        var app = angular.module('app', ['firebase']);
+        app.controller('chatCtrl', ['$scope', '$firebase', function($scope, $firebase) {
+            var name = prompt("Enter your name: ", '');
+            $scope.name = name;
+
+            $scope.chatMes = "";
+            $scope.message = "Hello";
+
+            var ref = new Firebase("https://amber-torch-2590.firebaseio.com/");
+            var sync = $firebase(ref);
+            $scope.chatMessages = sync.$asArray();
+
+            $scope.sendChat = function () {
+                var chatMessage = { name: name, message: $scope.chatMes };
+                $scope.chatMessages.$add(chatMessage);
+                $scope.chatMes = "";
+            }
+
+            $scope.delete = function(mes) {
+                $scope.chatMessages.$remove(mes);
+            };
+
+            $scope.clear = function() {
+                for (var i = 0; i < $scope.chatMessages.length; i++) {
+                    $scope.chatMessages.$remove($scope.chatMessages[i]);
+                }
+            }
+        }]);
+
+    </script>
+</html>
