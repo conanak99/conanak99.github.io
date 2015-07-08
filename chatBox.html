@@ -29,6 +29,7 @@
         var app = angular.module('app', ['firebase']);
         app.controller('chatCtrl', ['$scope', '$firebase', function($scope, $firebase) {
             var name = prompt("Enter your name: ", '');
+            var previousChat = '';
             $scope.name = name;
             $scope.chatMessage = "";
 
@@ -37,8 +38,11 @@
             $scope.chatMessages = sync.$asArray();
 			
             $scope.sendChat = function () {
+            	if($scope.chatMes == previousChat || $scope.chatMes.length == 0) return;
+            	
                 var chatMessage = { name: name, message: $scope.chatMes };
                 $scope.chatMessages.$add(chatMessage);
+                previousChat = $scope.chatMes;
                 $scope.chatMes = "";
             }
           
