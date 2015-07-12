@@ -1,0 +1,169 @@
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-width : 320px) and (max-width : 992px) {
+	.blog-posts.two-column .post-item {
+		width: 100%;
+	}
+	.logo-items li .client-logo {
+		width: 100%;
+		height: auto;
+	}
+	.blog-posts.two-column .post-item:nth-child(even) {
+		margin-left: 0;
+	}
+	.timeline:before {
+		display: none;
+	}
+	.blog-posts.timeline .post-item {
+		width: 100%;
+	}
+	.timeline .post-item:before {
+		display: none;
+	}
+	.timeline .post-item:nth-child(even):before {
+		display: none;
+	}
+	.blog-posts.timeline .post-item:nth-child(even) {
+		margin-left: 0;
+	}
+	.post-item .post-bullet {
+		display: none;
+	}
+	.experience-item .name-designation {
+		width: 100%;
+		float: none;
+		text-align: center;
+		padding: 0px;
+	}
+	.experience-item .stay-time {
+		position: relative;
+		left: auto;
+		top: auto;
+		margin: 17px auto;
+	}
+	.experience-item .comments {
+		float: none;
+		width: 100%;
+	}
+	.contact-form .form-input-group {
+		-moz-column-count: auto;
+		-moz-column-gap: 10px;
+		-webkit-column-count: auto;
+		-webkit-column-gap: 10px;
+		column-count: auto;
+		column-gap: 10px;
+	}
+	.header-content {
+		padding-top: 35px;
+	}
+	.social-link {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	.site-title {
+		margin-bottom: 0;
+	}
+	.site-title .site-name {
+		font-size: 35px;
+	}
+	.site-title .site-designation {
+		font-size: 20px;
+	}
+	.site-slogan {
+		font-size: 18px;
+	}
+	.social-profiles .item a {
+		width: 32px;
+		height: 32px;
+		padding-top: 2px;
+	}
+	.main-navigation .nav {
+		height: 100%;
+		overflow: scroll;
+		padding-bottom: 80px;
+	}
+	.carousel .right.testislider-control {
+		right: 10%;
+	}
+	.carousel .left.testislider-control {
+		left: 10%;
+	}
+}
+@media only screen and (max-width : 400px) {
+	.main-navigation .nav {
+		height: 100%;
+		overflow: scroll;
+		padding-bottom: 80px;
+	}
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+	.logo-items li .client-logo {
+		width: 165px;
+		height: auto;
+	}
+	.testimonial-slider .item .client-img {
+		width: 125px;
+		height: auto;
+	}
+	.profile-photo .profile-image {
+		width: 100%;
+		height: auto;
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+
+	.experience-item .stay-time {
+		top: 10px;
+	}
+	.experience-item .comments {
+		width: 45%;
+	}
+	.logo-items li .client-logo {
+		width: 215px;
+	}
+	.blog-posts.two-column .post-item {
+		width: 100%;
+	}
+	.blog-posts.two-column .post-item:nth-child(even) {
+		margin-left: 0;
+	}
+	.timeline:before {
+		display: none;
+	}
+	.blog-posts.timeline .post-item {
+		width: 100%;
+	}
+	.timeline .post-item:before {
+		display: none;
+	}
+	.timeline .post-item:nth-child(even):before {
+		display: none;
+	}
+	.blog-posts.timeline .post-item:nth-child(even) {
+		margin-left: 0;
+	}
+	.post-item .post-bullet {
+		display: none;
+	}
+}
+
+
+@media screen and  (max-width: 968px) {
+	.blog-container {
+		margin-bottom: 60px;
+	}
+}
+@media screen and  (max-width: 500px) {
+	.comment-section .author-image{
+		display: none;
+	}
+	.comment-section .comment-content {
+		margin-left: 0px;
+	}
+}
