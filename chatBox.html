@@ -33,7 +33,7 @@
             $scope.name = name;
             $scope.chatMessage = "";
 
-            var ref = new Firebase("https://amber-torch-2590.firebaseio.com/");
+            var ref = new Firebase("https://chatting-sample.firebaseio.com/");
             var sync = $firebase(ref);
             $scope.chatMessages = sync.$asArray();
 			
