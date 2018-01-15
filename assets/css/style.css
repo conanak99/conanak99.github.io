@@ -21,18 +21,18 @@ Tags: Single Column, Responsive, Clean, Modern, Flexiable, bootstrap
 *    2.1 - Text Color Classes
 *    2.2 - Background Color Classes
 *    2.3 - Animate Colors
-*    2.4 - Parallax 
+*    2.4 - Parallax
 *    2.5 - Section Style
 *    2.6 - Section Heading
 *    2.7 - Section Box
 *    2.8 -  Title
-*    2.9 -  Resume Download Button 
+*    2.9 -  Resume Download Button
 *    2.10 - Widgets
 *    2.11 - Search widget
 *    2.12 - Popular Post Widget
 *    2.13 - Arcives Widget
 *    2.14 - Twitter Widget
-*  3 - Site Header Styles 
+*  3 - Site Header Styles
 *    3.1 - Site Navigation
 *        3.1.1 - Navigation Header
 *              3.1.1.1 Navigation Switch
@@ -46,20 +46,20 @@ Tags: Single Column, Responsive, Clean, Modern, Flexiable, bootstrap
 *    4.2 - Design Skills
 *  5 - Skills Section Styles
 *    5.1 - Skills
-*    5.2 - Profile Details 
+*    5.2 - Profile Details
 *  6 - Experiences Section Styles
 *    6.1 - Skills Item
 *  7 - Education Section Styles
-*    7.1 - Education Item 
-*  8 - Portfolio Section Styles 
+*    7.1 - Education Item
+*  8 - Portfolio Section Styles
 *    8.1 - Portfolio Filters
 *    8.2 - Portfolio Items
 *    8.3 - Animations
 *  9 -  Clients Section Styles
-*    9.1 - Client Testimonials Carousel 
-*    9. -2 Testimonials Corousel Control 
-*    9.3 - Clients Logo 
-*  10 - Blog Section Styles  
+*    9.1 - Client Testimonials Carousel
+*    9. -2 Testimonials Corousel Control
+*    9.3 - Clients Logo
+*  10 - Blog Section Styles
 *     10.1 - Blog Posts
 *          10.1.1 - Post Meta
 *                10.1.1.1 - Post Type Styles
@@ -72,7 +72,7 @@ Tags: Single Column, Responsive, Clean, Modern, Flexiable, bootstrap
 *  12 - Footer Section Styles
 *     12.1 - Open Map
 *     12.2 - Footer Credit
-*  13 - Blog Page Styles 
+*  13 - Blog Page Styles
 *     13.1 - Timeline Blog Style
 *          13.1.1 - Bullet Colors
 *     13.2 ---- Email Validator
@@ -87,11 +87,6 @@ Tags: Single Column, Responsive, Clean, Modern, Flexiable, bootstrap
 /*================================================
 = 1.          General / Global Styles            =
 ================================================*/
-
-/* Import font from Google Webfonts*/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,100,200,300,600,800,700,900);
-
 
 /* 1.1 General Styles */
 body {
@@ -166,7 +161,7 @@ button:focus, button:active:focus, button.active:focus,
 
 
 
-/* 2.4 - Parallax 
+/* 2.4 - Parallax
 ---------------------------------------------*/
 .parallax-style {
 	background-repeat: no-repeat;
@@ -323,7 +318,7 @@ button:focus, button:active:focus, button.active:focus,
 
 /* 2.12 Popular Post Widget */
 .popular-posts {
-	
+
 }
 .popular-posts .post-archives {
 
@@ -441,7 +436,7 @@ button:focus, button:active:focus, button.active:focus,
 	-moz-transition: all .35s ease;
 	-ms-transition: all .35s ease;
 	-o-transition: all .35s ease;
-	transition: all .35s ease;	
+	transition: all .35s ease;
 }
 .main-navigation.top-fixed{
 	background: #FFF;
@@ -945,7 +940,7 @@ button:focus, button:active:focus, button.active:focus,
 	overflow: hidden;
 }
 .portfolio-item .item-content:hover img{
-	
+
 }
 .portfolio-item .item-content .overlay-content {
 	width: 100%;
@@ -957,7 +952,7 @@ button:focus, button:active:focus, button.active:focus,
 	border:8px solid #FFF;
 	position: absolute;
 	top: 0px;
-	left: 0px;		
+	left: 0px;
 }
 a {
 
@@ -971,7 +966,7 @@ a {
 }
 .project-info .title-cat,
 .project-info .project-link{
-	
+
 }
 .project-info .project-link {
 	right: 0px;
@@ -1174,7 +1169,7 @@ a {
 	-webkit-column-gap: 30px;
 	column-count: 2;
 	column-gap: 30px;
-	
+
 }
 .blog-posts.two-column {
 	overflow: hidden;
@@ -1259,7 +1254,7 @@ a {
 	font-size: 13px;
 	margin-right: 10px;
 }
-.post-meta .item, 
+.post-meta .item,
 .post-meta .item a {
 	color:#a6a6a6;
 }
@@ -1437,7 +1432,7 @@ a {
 	height: 70px;
 	width: 70px;
 	float: left;
-	margin-right: 20px; 
+	margin-right: 20px;
 }
 .comment-section .author-image img{
 	height: 70px;
@@ -1498,7 +1493,7 @@ a {
 	background: #f0f0f0;
 	border-radius: 4px;
 	padding: 10px;
-	margin-bottom: 20px; 
+	margin-bottom: 20px;
 }
 .comment-section .your-comment:focus{
 	outline: none;
@@ -1578,15 +1573,15 @@ a {
 }
 
 .form-input-group input:-moz-placeholder {
-	font-style: italic;  
+	font-style: italic;
 }
 
 .form-input-group input::-moz-placeholder {
-	font-style: italic;  
+	font-style: italic;
 }
 
-.form-input-group input:-ms-input-placeholder {  
-	font-style: italic;  
+.form-input-group input:-ms-input-placeholder {
+	font-style: italic;
 }
 .form-input-group input:focus {
 	outline: none;
@@ -1611,15 +1606,15 @@ a {
 }
 
 .contact-form .your-message:-moz-placeholder {
-	font-style: italic;  
+	font-style: italic;
 }
 
 .contact-form .your-message::-moz-placeholder {
-	font-style: italic;  
+	font-style: italic;
 }
 
-.contact-form .your-message:-ms-input-placeholder {  
-	font-style: italic;  
+.contact-form .your-message:-ms-input-placeholder {
+	font-style: italic;
 }
 .contact-form .your-message:focus {
 	outline: none;
@@ -1887,18 +1882,18 @@ a {
 }
 
 /* 13.2 ---- Email Validator --- */
-.error { 
-	display: none; 
-	padding:10px; 
+.error {
+	display: none;
+	padding:10px;
 	margin:0 0 5px 0;
-	color: #D8000C; 
+	color: #D8000C;
 	font-size:12px;
 	background-color: #FFBABA;
 }
-.success { 
-	display: none; 
-	padding:10px; 
-	color: #044406; 
+.success {
+	display: none;
+	padding:10px;
+	color: #044406;
 	font-size:12px;
 	background-color: #B7FBB9;
 }
